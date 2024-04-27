@@ -31,7 +31,7 @@ const handleIntern = () => {
     }, 2000);
 }
 
-internship.addEventListener("click" , handleIntern);
+internships.addEventListener("click" , handleIntern);
 
 
 //go to about us
