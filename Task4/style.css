@@ -771,7 +771,7 @@ margin-top: 20px;
       font-size: 0.6rem;
     }
 
-      #resume, .contact{
+       .contact{
       display: none;
     }
   }
