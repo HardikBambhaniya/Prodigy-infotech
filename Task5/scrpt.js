@@ -49,16 +49,22 @@ const fetchData = async () => {
         // console.log("Rain intensity: " , rainIntensity );
         if (rainIntensity > 0) {
             rainSpan.innerText = rainIntensity + ' mm';
+        }else{
+            rainSpan.innerText = '0 mm';
         }
 
         // console.log("Snow intensity: " , snowIntensity );
         if(snowIntensity > 0){
             snowSpan.innerText = snowIntensity + ' inch'
+        }else{
+            snowSpan.innerText = '0 inch';
         }
 
         // console.log("Cloud cover: " , cloudCover );
         if(cloudCover > 0){
             cloudSpan.innerText = cloudCover + ' %'
+        }else{
+            cloudSpan.innerText = '0 %';
         }
 
     } catch (error) {
