@@ -82,15 +82,18 @@
     align-items: center;
     width: 50%;
     background-image: linear-gradient(45deg , #503C3C , #535C91 );
+    box-shadow: 0px 0px 10px 0px 
+    #000;
 }
 
 .about-me:hover{
     cursor: pointer;
     box-shadow: 0px 0px 10px 0px 
-    #000;
+    #fff;
     color: #fff;
     margin-top: 30px;
-    transition: 1s;
+    background-image: linear-gradient(360deg, #535C91, #503C3C);
+    transition: 1s ease-in-out;
 }
 
 .img-box img{
@@ -103,8 +106,6 @@
 
 
 /*MAIN BOX */
-
-
 /*    SKILL-SECTION    */
 .skill-section{
   height: 250px;
@@ -131,20 +132,22 @@ margin-top: 20px;
 }
 
 .logo-box img{
-  height: 80px;
   width: 80px;
+  height: 80px;
+  aspect-ratio: 3/2;
   border-radius: 50%;
   object-fit: contain;
 }
 
 .logo-box img:hover{
   box-shadow: 5px 1px 10px 1px 
-  rgb(255, 0, 136);
+  rgb(0, 191, 255);
   transition: 0.5s;
 }
 
-/*    EDUCATION-SECTION START    */
- 
+
+
+/*    EDUCATION-SECTION START    */ 
 .heading{
   width: 100%;
   height: 30px;
@@ -187,7 +190,9 @@ margin-top: 20px;
     box-shadow: 0px 0px 10px 0px 
     #fff;
     margin: 30px;
+    background-image: linear-gradient(190deg ,#19376D, #4F4557 );
     transition: 1s;
+    
 }
 
 .clg-img img{
@@ -214,7 +219,7 @@ margin-top: 20px;
   padding-left: 20px;
   height: 300px;
   width: 50%;
-  color: #000;
+  color: #fff;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -225,12 +230,13 @@ margin-top: 20px;
 }
 
 .degree:hover{
-    color: #fff;
+    color: #000;
     cursor: pointer;
     box-shadow: 0px 0px 10px 0px 
     #fff;
     margin: 30px;
     transition: 1s;
+    background-image: linear-gradient(190deg ,#19376D, #4F4557 );
 }
 
 .uni-img img{
@@ -243,7 +249,6 @@ margin-top: 20px;
 
 
 /*                 Project-section starts             */
-
 .project-page{
   height: auto;
   width: 100%;
@@ -263,7 +268,6 @@ margin-top: 20px;
 
 .project-section{
   width: auto;
-  /* background-color: #092635; */
   height: 400px;
   display: flex;
   flex-direction: row;
@@ -365,12 +369,12 @@ margin-top: 20px;
 }
 
 .intern-project{
-  color: #000;
+   color: #000;
     margin-right: 20px;
     margin-left: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    height: 300px;
+    height: 380px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -397,7 +401,6 @@ margin-top: 20px;
 
 
 /*         Experience section     */
-
 
 .expeience-sec{
   height: auto;
@@ -524,14 +527,10 @@ margin-top: 20px;
   width: 100%;
   color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
-.developer a{
-  text-decoration: none;
-  color: #fff;
-}
 
 .developer i{
   color: rgb(200, 13, 13);
@@ -631,6 +630,14 @@ margin-top: 20px;
       #resume, .contact{
       display: none;
     }
+
+    .developer{
+      flex-direction: column;
+    }
+
+    .about-me{
+      margin: 10px;
+    }
   }
   
 
@@ -687,9 +694,6 @@ margin-top: 20px;
       height: 40px; 
       width: 40px;
     }   
-    
-   
-     
     
 
     .header-part, .about-section, .education-section, .degree-section, .project-section, .project-page{
@@ -773,6 +777,15 @@ margin-top: 20px;
 
        .contact{
       display: none;
+    }
+
+    .developer{
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .about-me{
+      margin: 10px;
     }
   }
   
@@ -884,6 +897,14 @@ margin-top: 20px;
       font-size: 0.8rem;
     }
 
+    .developer{
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .about-me{
+      margin: 10px;
+    }
 
   }
   
@@ -1009,6 +1030,10 @@ margin-top: 20px;
       align-items: center;
     }
     
+    .developer{
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
   }
   
   
@@ -1111,6 +1136,11 @@ margin-top: 20px;
       justify-content: center;
       align-items: center;
     }
+
+    .developer{
+      flex-direction: column;
+      justify-content: center;
+    }
   }
   
   
@@ -1173,5 +1203,10 @@ margin-top: 20px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+
+    .developer{
+      flex-direction: column;
+      justify-content: center;
     }
   } 
