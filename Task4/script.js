@@ -68,3 +68,56 @@ home.addEventListener('click', function(){
 });
 
 
+//GSAP learning and modified portfolio
+
+//navbaar timeline
+var navBar = gsap.timeline();
+
+navBar.from("li", {
+    y: -30,
+    opacity: 0,
+    duaration: 1,
+    delay: 0.3,
+    stagger: 0.3
+})
+
+navBar.from("#resume", {
+    y: -30,
+    opacity: 0,
+    duaration: 0.3,
+    delay: 0.3,
+})
+
+navBar.from(".header-part", {
+    y: -30,
+    opacity: 0,
+    duaration: 0.3,
+    delay: 0.3,
+})
+
+navBar.from(".skill-section", {
+    y: -30,
+    opacity: 0,
+    duaration: 0.3,
+    delay: 0.3,
+})
+
+navBar.from(".logo-box img", {
+    y: -30,
+    opacity: 0,
+    duaration: 0.3,
+    delay: 0.3,
+    stagger: 0.3
+})
+
+navBar.from(".img-box", {
+    x: 500,
+    duration: 0.5,
+    delay: 0.5
+})
+
+gsap.from(".about-me", {
+    x: 500,
+    duration: 1,
+    delay: 1
+})
