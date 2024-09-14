@@ -74,50 +74,50 @@ home.addEventListener('click', function(){
 var navBar = gsap.timeline();
 
 navBar.from("li", {
-    y: -30,
+    y: "-0.2",
     opacity: 0,
-    duaration: 1,
+    duration: 1,
     delay: 0.3,
     stagger: 0.3
 })
 
 navBar.from("#resume", {
-    y: -30,
+    y: "-0.1",
     opacity: 0,
-    duaration: 0.3,
+    duration: 0.3,
     delay: 0.3,
 })
 
 navBar.from(".header-part", {
-    y: -30,
+    y: "-0.3",
     opacity: 0,
-    duaration: 0.3,
+    duration: 0.3,
     delay: 0.3,
 })
 
 navBar.from(".skill-section", {
-    y: -30,
+    y: "-0.3",
     opacity: 0,
-    duaration: 0.3,
+    duration: 0.3,
     delay: 0.3,
 })
 
 navBar.from(".logo-box img", {
-    y: -30,
+    y: "-0.3",
     opacity: 0,
-    duaration: 0.3,
+    duration: 0.3,
     delay: 0.3,
     stagger: 0.3
 })
 
 navBar.from(".img-box", {
-    x: 500,
+    x: "50%",
     duration: 0.5,
     delay: 0.5
 })
 
 gsap.from(".about-me", {
-    x: 500,
+    x: "50%",
     duration: 1,
     delay: 1
 })
@@ -127,14 +127,13 @@ gsap.from(".about-me", {
 gsap.from(".college", {
     scale: 0,
     duration: 1,
-    x: -500 ,
+    x: "-50%" ,
     delay: 0.5,
     scrollTrigger: {
         trigger: ".college",
         scroller: "body",
-        start: "top 50%",
+        start: "top 30%",
         end: "top 30%",
-        markers: true,
         scrub: 2
     }
 })
